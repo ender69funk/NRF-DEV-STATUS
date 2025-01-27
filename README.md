@@ -1,1 +1,1 @@
-# NRF-DEV-STATUS
+# nrf-status

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NRF - DEV STATUS</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body bgcolor="black" text="white">
+        <div class="main">
+            <div class="content">
+                <img src="dudeType.png">
+                <h1>СТАТУС РАЗРАБОТКА МОДА</h1>
+                <p>Временно заморожен но идёт хорошо</p>
+            </div>
+        </div>
+        <CENTER>
+            <h1>
+                <p onclick="telegramChannel()" style ="color: blue;">НАЖМИ ЧТОБЫ ПОДПИСАТЬСЯ НА ТЕЛЕГРАМ КАНАЛ - BUNKER ENDER69</p>
+            </h1>
+            <h2>
+                <marquee bgcolor = "red" id="randomText" direction = "left" scrolllamout = "50" scrolldelay = "200" width = "90%" text="white"></marquee>
+                <marquee bgcolor = "blue" id="randomText2" direction = "left" scrolllamout = "50" scrolldelay = "0" width = "90%" text="white"></marquee>
+                <marquee bgcolor = "green" id="randomText3" direction = "left" scrolllamout = "50" scrolldelay = "100" width = "90%" text="white">
+                <script>
+                    function telegramChannel() {
+                        window.location.href = "https://t.me/ender69bunker";
+                    }
+                    function modLink() {
+                        window.location.href = "https://t.me/ender69bunker";
+                    }
+                    const texts = [
+                            'Кто дрочить на руби тот пидорас!',
+                            'Привет ты дикон',
+                            'В МОДЕ БУДЕТ ПИТВ ИДИТЕ НАХУЙ',
+                            'Птичка негри бёрдс',
+                            'Это и есть ам ням',
+                            'Порно тут -> t.me/romcock',
+                            'Отсосоник эго трип',
+                            'Аджика иди нахуй',
+                            'ВСЕМ В ПОДВАЛ ДИМЕНКО',
+                            'Z'
+                        ];
+                    const textsZ = [
+                            'Кириешки',
+                            'Пяточки дрейка',
+                            'Хайл стинтлер',
+                            'Зря.',
+                            ":UNDERCOBALTREAL:",
+                            ":4REAL:",
+                            "42 БРАТУХА",
+                            'FREE CODE -> 542',
+                            'Нурик',
+                            "567 МЛАДЕНЕЦ"
+                        ];
+                    const textsAlt = [
+                            'фу бля',
+                            'Птички летят, бомбить поросят.',
+                            '5 РУБЛЕЙ ГОВНО. ХААХАХХАХАХАХАХА',
+                            'АНИМАНИЯ ГОВНО. ХАХАХААХХАХАХАХА',
+                            'SEALZ ON TOP',
+                            'ЭТО БРУТАЛ ПИЗДЕЦ',
+                            'ПРИВЕТ УМБРООООО)))',
+                            'КОТАКТЕЛЕКОМ',
+                            'БЛЯТЬ ТЕКСТ ДВИГАЕТСЯ АХАХАХА',
+                            'БЕБРЫ ВСЕ В АДИДАСАХ'
+                        ];
+                    function generateRandomText() {
+                        const randomIndex = Math.floor(Math.random() * texts.length);
+                        const randomIndexZ = Math.floor(Math.random() * textsZ.length);
+                        const randomIndexV = Math.floor(Math.random() * textsAlt.length);
+                        const randomText = texts[randomIndex];
+                        const randomTextZ = textsZ[randomIndex];
+                        const randomTextV = textsAlt[randomIndex];
+                        document.getElementById('randomText').textContent = randomText;
+                        document.getElementById('randomText2').textContent = randomTextZ;
+                        document.getElementById('randomText3').textContent = randomTextV;
+                    }
+                setInterval(generateRandomText, 3000)
+                generateRandomText();
+                </script>
+            </h2>
+        </CENTER>
+    </body>
+</html>
